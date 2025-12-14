@@ -1,0 +1,83 @@
+2025-12-14 00:17:09,015 - SparxTTWorkflow - DEBUG - Initializing SparxTTWorkflow...
+2025-12-14 00:17:14,837 - SparxTTWorkflow - DEBUG - Web driver initialized and WebDriverWait set.
+2025-12-14 00:17:14,837 - SparxTTWorkflow - DEBUG - Workflow attributes set.
+2025-12-14 00:17:14,837 - SparxTTWorkflow - DEBUG - Entering function: run_workflow
+2025-12-14 00:17:14,837 - SparxTTWorkflow - INFO - Running workflow...
+2025-12-14 00:17:15,137 - SparxTTWorkflow - DEBUG - Entering function: get_to_tt
+2025-12-14 00:17:15,137 - SparxTTWorkflow - DEBUG - Entering function: wait_for_element
+2025-12-14 00:17:25,389 - SparxTTWorkflow - ERROR - Error in function 'wait_for_element': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "D:\Sparx\SparxMathsBot\src\decorators.py", line 17, in wrapper
+    result = func(self, *args, **kwargs)
+  File "D:\Sparx\SparxMathsBot\src\workflow.py", line 159, in wait_for_element
+    return self.wait.until(condition)
+  File "C:\Users\Samzz\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-14 00:17:25,389 - SparxTTWorkflow - ERROR - Error in function 'get_to_tt': Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "D:\Sparx\SparxMathsBot\src\decorators.py", line 17, in wrapper
+    result = func(self, *args, **kwargs)
+  File "D:\Sparx\SparxMathsBot\src\workflow.py", line 80, in get_to_tt
+    self.wait_for_element(
+  File "D:\Sparx\SparxMathsBot\src\decorators.py", line 17, in wrapper
+    result = func(self, *args, **kwargs)
+  File "D:\Sparx\SparxMathsBot\src\workflow.py", line 159, in wait_for_element
+    return self.wait.until(condition)
+  File "C:\Users\Samzz\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-14 00:17:25,389 - SparxTTWorkflow - ERROR - An error occurred during the workflow: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+Traceback (most recent call last):
+  File "D:\Sparx\SparxMathsBot\src\workflow.py", line 43, in run_workflow
+    self.get_to_tt()
+  File "D:\Sparx\SparxMathsBot\src\decorators.py", line 17, in wrapper
+    result = func(self, *args, **kwargs)
+  File "D:\Sparx\SparxMathsBot\src\workflow.py", line 80, in get_to_tt
+    self.wait_for_element(
+  File "D:\Sparx\SparxMathsBot\src\decorators.py", line 17, in wrapper
+    result = func(self, *args, **kwargs)
+  File "D:\Sparx\SparxMathsBot\src\workflow.py", line 159, in wait_for_element
+    return self.wait.until(condition)
+  File "C:\Users\Samzz\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 122, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:555:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+2025-12-14 00:17:25,405 - SparxTTWorkflow - DEBUG - Entering function: cleanup
+2025-12-14 00:17:28,132 - SparxTTWorkflow - INFO - Web driver closed.
+2025-12-14 00:17:28,132 - SparxTTWorkflow - DEBUG - Exiting function: cleanup
+2025-12-14 00:17:28,132 - SparxTTWorkflow - INFO - Workflow run completed, cleanup executed.
+2025-12-14 00:17:28,132 - SparxTTWorkflow - DEBUG - Exiting function: run_workflow
+2025-12-14 00:17:28,132 - SparxTTWorkflow - INFO - Workflow run completed.
